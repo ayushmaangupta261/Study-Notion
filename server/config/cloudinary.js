@@ -8,13 +8,13 @@ const cloudinary = require('cloudinary').v2;
 exports.cloudinaryConnect = () => {
 
     try {
-        // console.log("cloud name ", CLOUD_NAME)
+        // console.log("cloud name ",  process.env.CLOUD_NAME)
 
         cloudinary.config({
             // configuring cloudinary to upload media
-            clound_name: dysvguvul,
-            api_key: 823891537925136,
-            api_secret: pvq_dYROJxLUJFVpRA6F5GbhJZ4,
+            clound_name: process.env.CLOUD_NAME,
+            api_key: process.env.CLOUD_NAME,
+            api_secret: process.env.API_SECRET,
         });
 
     } catch (e) {
