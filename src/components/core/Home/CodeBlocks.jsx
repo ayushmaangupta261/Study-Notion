@@ -39,6 +39,7 @@ const CodeBlocks = ({
         </div>
       </div>
 
+
       {/* Section 2 */}
       <div
         className={`flex h-fit  w-[100%] text-[10px] py-4 lg:w-[500px] rounded-xl shadow-lg shadow-[#25f0a6] bg-gradient-to-r from-[#BBD2C5] to-[#536976]`}
