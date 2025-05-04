@@ -1,70 +1,142 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📘 StudyNotion
 
-## Available Scripts
+**StudyNotion** is a full-stack EdTech web application. It empowers users to create, manage, and enroll in online courses. Built with the MERN stack, it offers robust user authentication, real-time updates, secure payments, and an intuitive UI for students and instructors.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔧 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js, Tailwind CSS, Redux Toolkit
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens), Bcrypt
+- **File Uploads:** Cloudinary
+- **Payments:** Razorpay
+- **Email:** Nodemailer
+- **Video Player:** React Player
+- **Environment Management:** dotenv
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👩‍🏫 Instructor Side
+- Course creation with modules, lectures, and quizzes
+- Video and thumbnail upload via Cloudinary
+- Dashboard with earnings and course management
 
-### `npm run build`
+### 🎓 Learner Side
+- Browse and enroll in courses
+- Secure payment with Razorpay
+- Track progress and access course materials
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔐 Authentication & Authorization
+- Signup/login with role-based access (Student / Instructor)
+- Password reset via email
+- Protected routes using JWT
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📧 Email Integration
+- Welcome emails
+- Password reset links
+- Course enrollment confirmations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📦 Other Features
+- Responsive design using Tailwind CSS
+- Toast notifications for feedback
+- Admin dashboard (optional feature for super-admins)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+StudyNotion/              # React Frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── utils/
+├── server/               # Express Backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── utils/
+├── .env
+├── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/studynotion.git
+cd studynotion
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Setup Environment Variables
+Create a `.env` file in the `server/` directory and add:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+MONGODB_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+RAZORPAY_KEY_ID=your_razorpay_key
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+EMAIL_USER=your_email
+EMAIL_PASS=your_email_password
+```
 
-### Code Splitting
+### 3. Install Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### For client
+```bash
+cd client
+npm install
+```
 
-### Analyzing the Bundle Size
+#### For server
+```bash
+cd server
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Run the App
+```bash
+# Run backend
+cd server
+npm run dev
 
-### Making a Progressive Web App
+# Run frontend
+cd ../client
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> Add UI screenshots here of dashboard, course creation, player etc.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📚 License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🙋‍♂️ Acknowledgements
+
+Thanks to the developers of [CodeLab](https://github.com/) for inspiration.
+
+---
+
+## 📬 Contact
+
+For feedback or contributions: **your.email@example.com**
