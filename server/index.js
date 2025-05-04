@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
     cors({ // It will entertain the request of frontend and make it interact with backend
-        origin: "http://localhost:3000",
+        origin: "https://study-notion-frontend-3ptv.onrender.com",
         credentials: true,
     }),
 );
