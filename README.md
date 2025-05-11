@@ -106,16 +106,18 @@ cd server
 npm install
 ```
 
-### 4. Run the App
-```bash
-# Run backend
-cd server
+
+
+### 4. Run Locally
+
+#### In one terminal (backend + frontend):
+
+# The project uses run concurrently
 npm run dev
 
-# Run frontend
-cd ../client
-npm start
-```
+
+
+
 
 ---
 
