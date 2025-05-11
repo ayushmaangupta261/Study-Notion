@@ -110,7 +110,7 @@ npm install
 
 ### 4. Run Locally
 
-#### In one terminal (backend + frontend):
+#### In one terminal (backend + frontend) in parent directory:
 
 # The project uses run concurrently
 npm run dev
