@@ -131,12 +131,9 @@ Self Owned
 
 ---
 
-## 🙋‍♂️ Acknowledgements
+## 🙋 Author
 
-Thanks to the developers of [CodeLab](https://github.com/) for inspiration.
-
----
-
-## 📬 Contact
-
-For feedback or contributions: **your.email@example.com**
+**Ayushmaan Gupta**  
+📧 ayush.261.gupta@gmail.com  
+🔗 [GitHub](https://github.com/ayushmaangupta261)  
+🔗 [LinkedIn](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
